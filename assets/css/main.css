@@ -1,0 +1,103 @@
+/* Общие стили */
+body {
+    background-color: #9e6a08;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+/* Стили для секций */
+section {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section.active {
+    display: flex;
+}
+
+/* Стили для заголовков внутри секций */
+section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Стили для кнопок */
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.category-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #404240;
+    color: white;
+    border-radius: 4px;
+}
+
+.back-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #ddd;
+    color: #333;
+    border-radius: 4px;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+    max-width: 300px;
+    width: 100%;
+}
+
+/* Контейнер для предварительного просмотра */
+.preview-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.preview-container img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#cats-result, #dogs-result {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+

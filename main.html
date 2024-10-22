@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMCAD</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <header>
+        <h1>TMCAD</h1>
+    </header>
+
+    <main>
+        <!-- Секция выбора категории -->
+        <section id="selection-section" class="active">
+            <h2>Выберите категорию</h2>
+            <div class="button-container">
+                <button id="cats-btn" class="category-btn">Коты</button>
+                <button id="dogs-btn" class="category-btn">Собаки</button>
+            </div>
+        </section>
+
+        <!-- Секция кошек -->
+        <section id="cats-section">
+            <h2>Загрузите фото кошки</h2>
+            <input type="file" id="cats-upload" accept="image/*">
+            <div class="preview-container">
+                <img id="cats-preview" src="" alt="Предварительный просмотр кошки" style="display: none;">
+            </div>
+            <div id="cats-result"></div>
+            <button id="back-from-cats-btn" class="back-btn">Назад</button>
+        </section>
+
+        <!-- Секция собак -->
+        <section id="dogs-section">
+            <h2>Загрузите фото собаки</h2>
+            <input type="file" id="dogs-upload" accept="image/*">
+            <div class="preview-container">
+                <img id="dogs-preview" src="" alt="Предварительный просмотр собаки" style="display: none;">
+            </div>
+            <div id="dogs-result"></div>
+            <button id="back-from-dogs-btn" class="back-btn">Назад</button>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.21.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script src="/assets/script/main.js"></script>
+</body>
+</html>
